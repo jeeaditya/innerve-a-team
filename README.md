@@ -25,7 +25,8 @@ The next problem we faced was while applying OCR. As the text on the medicine st
 
 ## User Interface:
 
-![Alt text](/public/img/display.jpeg?raw=true 'Title')
+![Alt text](/public/img/results.png?raw=true 'Title')
+![Alt text](/public/img/details.png?raw=true 'Title')
 
 ## To use:
 

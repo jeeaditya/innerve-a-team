@@ -12,7 +12,7 @@ def index():
 @app.route('/', methods=['POST'])
 def index_post():
     text = request.form['text']
-    df = cosine_similarity_T(10, text).head(5)
+    df = cosine_similarity_T(10, text).head(6)
     return render_template('index.html', frame=df)
 
 
