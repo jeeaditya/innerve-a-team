@@ -32,3 +32,9 @@ The next problem we faced was while applying OCR. As the text on the medicine st
 ```
 Run Flask application app.py
 ```
+
+## Go to Browser:
+
+```
+http://127.0.0.1:5000/
+```

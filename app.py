@@ -12,8 +12,8 @@ def index():
 @app.route('/', methods=['POST'])
 def index_post():
     text = request.form['text']
-    df = cosine_similarity_T(10, text)
-    return render_template('result.html', tables=[df.to_html(classes='data')], titles=df.columns.values)
+    df = cosine_similarity_T(10, text).head(5)
+    return render_template('index.html', frame=df)
 
 
 if __name__ == "__main__":
