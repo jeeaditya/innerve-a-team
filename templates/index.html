@@ -27,7 +27,7 @@
       }
 
       .card {
-        min-height: 60vh;
+        min-height: 70vh;
       }
 
       .uncheck {
@@ -38,7 +38,7 @@
 
   <body>
     <nav class="navbar navbar-light border-bottom text-center custom mb-5">
-      <h1 style="color: black;"><strong>Welcome To MediWiz</strong></h1>
+      <h1 style="color: black"><strong>Welcome To MediWiz</strong></h1>
     </nav>
 
     <div class="container">
@@ -48,6 +48,14 @@
             <div class="mb-5">
               <h3 class="card-header">Gather Complete Details Of Your Medicine!!</h3>
             </div>
+            <form action="/uploader" enctype="multipart/form-data" method="POST">
+              <span>Upload Your Sample Here:</span> <br />
+              <input type="file" class="btn btn-secondary" name="file" required /> <br />
+              <br />
+              <input type="submit" value="Submit" class="btn btn-success" />
+            </form>
+            <br />
+            <strong>OR</strong>
             <br />
             <form action="/" enctype="multipart/form-data" method="POST">
               <span>Enter Text:</span> <br />
@@ -96,8 +104,8 @@
               {% endfor%}
             </div>
             {% else %}
-            <div class="container uncheck">
-              <h3>Upload Your Medicine Details to get Started</h3>
+            <div>
+              <img src="{{url_for('static', filename='clipart.jpeg')}}" class="card-img-bottom" />
             </div>
             {% endif %}
           </div>
